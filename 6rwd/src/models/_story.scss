@@ -1,0 +1,121 @@
+.story {
+    padding: 229px 0 176px;
+	background-color: #245852;
+	color: #fff;
+
+    &-row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &-content {
+        margin-right: 30px;
+        max-width: 580px;
+    }
+  
+    &-heading {
+        font-size: 50px;
+        line-height: 79px;
+        font-family: "Georgia", serif;
+        font-weight: 700;
+        & + * {
+            margin-top: 33px;
+        }
+    }
+
+    &-text {
+        font-size: 25px;
+        line-height: 79px;
+
+        & + * {
+            margin-top: 57px;
+        }
+    }
+
+    &-btn {
+        display: flex;
+    }
+
+    &-video {
+        border-radius: 18px;
+        overflow: hidden;
+        max-width: 895px;
+        position: relative;
+
+        &-btn {
+            display: inline-block;
+            background: none;
+            background-color: transparent;
+            border: 0;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            
+        }
+
+        &-overlay {
+            position: absolute;
+            z-index: 99;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.2);
+            transition: .3s ease;
+
+        }
+        &-object {
+            max-width: 100%;
+            height: auto;
+            vertical-align: top;
+        }
+    }
+}
+.story-video-overlay.hidden {
+    opacity: 0;
+    transition: .3s ease;
+}
+
+
+
+@media (max-width: 1199px) {
+    .story {
+        padding: 90px 0 90px;
+        &-row {
+            flex-direction: column-reverse;
+        }
+        &-heading {
+            font-size: 40px;
+            line-height: 130%;
+        }
+        &-text {
+            font-size: 20px;
+            line-height: 130%;
+            & + * {
+                margin-top: 30px;
+            }
+        }
+        &-video {
+            margin-bottom: 40px;
+            
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .story {
+        padding: 60px 0 60px;
+        &-heading {
+            font-size: 30px;
+            line-height: 130%;
+        }
+        &-text {
+            font-size: 18px;
+            & + * {
+                margin-top: 20px;
+            }
+        }
+    }
+}

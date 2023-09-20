@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Lato&family=Manrope:wght@400;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Comfortaa', cursive;
+  background-color: black;
+  color: white;
+}
+
+header {
+  border-bottom: 5px solid burlywood;
+}
+
+.container {
+  width: 95%;
+  margin: auto;
+}
+
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 15px 0;
+}
+
+.nav h2 {
+  font-size: 2rem;
+}
+
+.search-box {
+  position: relative;
+  width: 350px;
+}
+
+.search-box input {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  font-size: 1rem;
+  padding: 8px;
+  border-radius: 25px;
+  outline: none;
+  border: 1px solid lightgrey;
+}
+
+.search-box input:focus {
+  -webkit-box-shadow: 0 0 5px burlywood;
+          box-shadow: 0 0 5px burlywood;
+  border: 1px solid burlywood;
+}
+
+.search-box i {
+  color: black;
+  position: absolute;
+  top: 25%;
+  right: 4%;
+  -webkit-transition: 1.5s;
+  transition: 1.5s;
+}
+
+.search-box i:hover {
+  color: burlywood;
+}
+
+.grid {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.img {
+  width: 380px;
+  height: 200px;
+  margin-top: 15px;
+  background-position: 50% 50%;
+  background-size: cover;
+  border-radius: 2px;
+}
+
+@media (max-width: 768px) {
+  .img {
+    width: 100%;
+  }
+  .nav {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .nav h2 {
+    padding: 5px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav {
+    text-align: center;
+    font-size: 1.5rem;
+  }
+  .search-box {
+    width: 80%;
+    margin: auto;
+  }
+  .search-box input {
+    font-size: .7rem;
+  }
+}

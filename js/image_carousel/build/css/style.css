@@ -1,0 +1,116 @@
+.container {
+  width: 70%;
+  height: 100vh;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+}
+
+#prev {
+  position: absolute;
+  color: white;
+  top: 43%;
+  left: 0;
+  cursor: pointer;
+  padding: 16px;
+  font-weight: 700;
+  font-size: 1rem;
+  -webkit-transition: .6s ease;
+  transition: .6s ease;
+  border-radius: 0 3px 3px 0;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+#prev:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+#next {
+  position: absolute;
+  color: white;
+  top: 43%;
+  right: 0;
+  cursor: pointer;
+  padding: 16px;
+  font-weight: 700;
+  font-size: 1rem;
+  -webkit-transition: .6s ease;
+  transition: .6s ease;
+  border-radius: 0 3px 3px 0;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+#next:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.dots {
+  text-align: center;
+  margin-top: 2%;
+}
+
+.dot {
+  height: 15px;
+  width: 15px;
+  background: #bbb;
+  display: inline-block;
+  border-radius: 50%;
+  margin: 0 2px;
+  -webkit-transition: .6s ease;
+  transition: .6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+.fade {
+  -webkit-animation: fade 1.5s;
+          animation: fade 1.5s;
+}
+
+.image {
+  display: none;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: .4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: .4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+  }
+}

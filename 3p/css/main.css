@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-family: 'Monrope';
+}
+header {
+    display: flex;
+    height: 73px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+}
+.header-container {
+    width: 1110px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+.appstore {
+    margin-left: auto;
+    display: flex;
+   
+}
+.appstore a {
+    margin-right: 12px;
+}
+.appstore a:last-child {
+    margin-right: 0px;
+}
+.logo{
+    display: block;
+    margin-right: 40px;
+}
+.nav {
+    font-weight: 700;
+    margin-top: -4px;
+}
+.nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+}
+.nav ul li {
+    margin-right: 32px;
+}
+
+.nav ul li:last-child {
+    margin-right: 177px;
+}
+
+.nav ul li a {
+    line-height: 1;
+    color: #18191F;
+    text-decoration: none;
+    transition: 0.5s;
+}
+.nav ul li a:hover {
+    transition: 0.5s;
+    color: #8C30F5;
+}
+
+
+
+/*main */
+
+.image {
+    width: 540px;
+}
+
+.main-container {
+    width: 1110px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 197px ;
+    padding-bottom: 197px ;
+    align-items: center;
+}
+
+.main-content h1 {
+    margin: 0;
+    font-weight: 800;
+    font-size: 72px;
+    line-height: 1.36;
+    color: #18191F;
+}
+.main-content p {
+    margin: 0;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.78;
+    color: #18191F;
+}
+
+.main-content a button {
+    outline: none;
+    border: none;
+    font-size: 20px;
+    margin-top: 32px;
+    width: 284px;
+    height: 62px;
+    background-color: #8C30F5;
+    color: #fff;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: .2s;
+}
+.main-content a button:hover {
+    color: #18191F;
+    transition: 0.5s ease;
+    opacity: .9;
+}
+/*footer*/
+.footer {
+    background: #0B0D17 ;
+}
+.footer-content {
+    width: 1110px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    height: 72px;   
+    align-items: center;
+}
+.footer-content p{
+    margin: 0;
+    font-weight: 400;
+    color: #D9DBE1;
+    font-size: 14px;
+    line-height: 1.71;
+}
+.footer-img a{
+    margin-right: 16px;
+}
+
+.footer-img a:last-child{
+    margin-right: 0px;
+}
+
+.footer-img a:hover {
+    transition: .2s;
+    opacity: .6;
+}

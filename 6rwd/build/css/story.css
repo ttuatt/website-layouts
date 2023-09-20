@@ -1,0 +1,20 @@
+.story {
+  background-color: #245852;
+  padding: 229px 0 176px 0;
+}
+
+.story-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.story-content {
+  margin-right: 30px;
+}
